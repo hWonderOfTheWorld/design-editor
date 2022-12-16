@@ -306,6 +306,20 @@ const Navbar = () => {
           </Button>
           <Button
             size="compact"
+            onClick={makeDownloadTemplate}
+            kind={KIND.tertiary}
+            overrides={{
+              StartEnhancer: {
+                style: {
+                  marginRight: "4px",
+                },
+              },
+            }}
+          >
+            Make Poap
+          </Button>
+          <Button
+            size="compact"
             onClick={() => setDisplayPreview(true)}
             kind={KIND.tertiary}
             overrides={{
